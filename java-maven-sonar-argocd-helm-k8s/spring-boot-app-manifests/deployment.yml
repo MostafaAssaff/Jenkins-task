@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: aliashmawy/day4:replaceImageTag
+        image: aliashmawy/day4:45
         ports:
         - containerPort: 8080
