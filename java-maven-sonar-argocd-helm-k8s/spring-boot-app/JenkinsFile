@@ -57,7 +57,7 @@ pipeline {
             docker version
             docker build -t massaff/task4 .
           '''
-          def dockerImage = docker.image("massaff/jenkins-demo")
+          def dockerImage = docker.image("massaff/task4")
           docker.withRegistry('https://index.docker.io/v1/', "434ceb36-544c-4813-81b9-09e6ebd64dc4") {
             dockerImage.push()
             }
